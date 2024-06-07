@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  padding-right: 20px; /* Reduced for smaller screens */
+  font-size: 45px;
+  font-weight: bold;
+  color: #DF2771;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #FFF;
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  height: 20vh;
+}
+
+nav {
+  padding: 10px; /* Adjusted for smaller screens */
+  top: 0;
+  position: fixed;
+  display: flex;
+  width: 100%;
+  z-index: 1000;
+  background: #eeebeb;
+  justify-content: space-between; /* Adjusted for better spacing */
+  transition: 1.5s;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 5px;
+}
+
+nav ul li a {
+  padding: 2px 10px;
+  color: #2e2e2e;
+  cursor: pointer;
+  transition: .5s;
+  text-decoration: none;
+  border: 2px solid #DF2771;
+  border-radius: 20px;
+}
+
+nav ul li a:hover {
+  color: #fff;
+  border-radius: 15px;
+  background: #DF2771;
+}
+
+.head-container,
+.head-container1,
+.head-container2,
+.head-container3 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  margin-top: 5px;
+  border: 5px solid #DF2771;
+  font-size: 25px;
+  border-radius: 40px;
+  padding: 20px;
+  margin-bottom: 40px; /* Unified margin-bottom */
+}
+
+.topic {
+  font-size: 50px; /* Reduced for smaller screens */
+  color: #DF2771;
+  text-align: center; /* Centered for better alignment */
+}
+
+.content1 {
+  font-size: 35px; /* Reduced for smaller screens */
+  padding-top: 20px;
+  padding-bottom: 15px;
+  text-align: center; /* Centered for better alignment */
+}
+
+.content2 {
+  font-size: 30px; /* Reduced for smaller screens */
+  padding-top: 15px;
+  padding-bottom: 30px;
+  text-align: center; /* Centered for better alignment */
+}
+
+.clickbtn {
+  padding: 2px 10px;
+  font-size: 18px; /* Reduced for smaller screens */
+  color: #2e2e2e;
+  cursor: pointer;
+  transition: .5s;
+  text-decoration: none;
+  border: 2px solid #DF2771;
+  border-radius: 20px;
+}
+
+.clickbtn:hover {
+  color: #fff;
+  border-radius: 10px;
+  background: #DF2771;
+}
+
+.aus {
+  text-align: center;
+  border: 5px solid #bb0d52;
+  border-radius: 50px;
+  padding: 30px;
+  width: auto; /* Adjusted for responsiveness */
+  max-width: 90%; /* Ensures it doesn't exceed screen width */
+  font-size: 30px; /* Reduced for smaller screens */
+  margin: 20px auto; /* Centered and adjusted margin */
+  background-image: linear-gradient(to right, #DF2771, #edb2c9);
+}
+
+.aboutus {
+  background-image: linear-gradient(to right, #DF2771, #edb2c9);
+  border-top: 5px solid #bb0d52;
+  border-bottom: 5px solid #bb0d52;
+  border-radius: 50px;
+  font-size: 50px;
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 800px) {
+  .logo {
+    font-size: 2px;
+    padding-right: 5px;
+
+  }
+  #header{
+     height: 120px;
+  }
+  nav {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  nav ul {
+    flex-direction: row;
+    width: 100%;
+    padding-left: 60px;
+  }
+
+  nav ul li {
+    font-size: 8px;
+    margin: 5px 0; 
+    margin-left: 10px;
+    
+  }
+
+  .topic {
+    font-size: 25px;
+  }
+
+  .content1 {
+    font-size: 12px;
+  }
+
+  .content2 {
+    font-size: 10px;
+  }
+
+  .clickbtn {
+    font-size: 10px;
+
+  }
+
+  .aus {
+    font-size: 12px;
+  }
+  .aboutus{
+    font-size: 20px;
+  }
+  .head-container,
+  .head-container1,
+  .head-container2,
+  .head-container3{
+    margin-top: 60px;
+    width: 340px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .topic {
+    font-size: 20px; /* Reduced for smaller screens */
+    color: #DF2771;
+    text-align: center; /* Centered for better alignment */
+  }
+img{
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
+}
+.mapimg{
+  width: 80px;
+  height: 80px;
+}
+}
+
+@media (max-width: 400px) {
+  .logo {
+    font-size: 25px;
+  }
+  
+  .topic {
+    font-size: 25px;
+  }
+
+  .content1 {
+    font-size: 18px;
+  }
+
+  .content2 {
+    font-size: 16px;
+  }
+
+  .aus {
+    font-size: 12px;
+  }
+}
